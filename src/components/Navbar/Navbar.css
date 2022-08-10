@@ -16,7 +16,7 @@
 .categories {
     display: flex;
     gap: 20%;
-    margin-right: 10%;
+    margin-right: 14%;
     align-items: center;
     list-style: none;
 }

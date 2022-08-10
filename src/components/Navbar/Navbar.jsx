@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../../logo.svg'
-import cart from '../../cart.svg'
+import CartWidget from '../CartWidget/CartWidget'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -19,7 +19,7 @@ const Navbar = () => {
         ))}
       </ul>
       <div>
-        <img className='cart' src={cart} alt="cart" />
+        <CartWidget/>
       </div>
     </div>
   )
