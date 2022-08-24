@@ -1,4 +1,15 @@
 .ItemListContainer {
     display: flex;
+    flex-direction: column;
+}
+
+.greeting{
+    display: flex;
+    justify-content: center;
+}
+
+.ItemList {
+    display: flex;
+    justify-items: center;
     justify-content: center;
 }
