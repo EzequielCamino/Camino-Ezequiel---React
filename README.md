@@ -1,3 +1,6 @@
+Se utilizó el módulo Bootstrap para dar estilo a Navbar y las cards Item e ItemDetail
+Se utilizó el módulo SASS para dar estilo a todas las hojas de estilo.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
