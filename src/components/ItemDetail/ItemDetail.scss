@@ -1,0 +1,38 @@
+.itemDetail{
+    margin: 1rem;
+    .itemDetailCardBody {
+        margin: 2rem;
+        display: flex;
+        gap: 1rem;
+        .itemDetailCardImg{
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .itemDetailCardText {
+            grid-area: itemCardText;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            span {
+                font-size: 1.2rem;
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 1200px) {
+    .itemDetailCardBody{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .itemDetailCardText{
+            gap: 1rem;
+        }
+    }
+}
+
+

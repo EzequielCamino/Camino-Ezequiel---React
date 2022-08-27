@@ -1,0 +1,20 @@
+#navbar {
+    .logo {
+        display: flex;
+        .logoImg{
+            width: 10%;
+        }
+        .logoText{
+            text-decoration: none;  
+            color: black;
+        }
+    }
+    .navbarCategory {
+        text-decoration: none;
+        list-style: none;
+    }
+}
+
+.cart{
+    height: 2rem;
+}
