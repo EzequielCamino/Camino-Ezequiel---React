@@ -1,17 +1,19 @@
 import Card from 'react-bootstrap/Card';
-import React from 'react'
+import React, {useState, useContext} from 'react'
 import "./ItemDetail.scss"
+import { CartContext } from '../../context/CartContext';
 import ItemCount from '../ItemCount/ItemCount';
-import { useState } from 'react';
 import Button from 'react-bootstrap/esm/Button';
 import { Link } from 'react-router-dom';
 
 function ItemDetail({item}) {
-  const [qty, setQty] = useState(0)
+  const [qty, setQty] = useState(0);
+  const {addItem} = useContext(CartContext);
 
-  const onAdd = (counter, title)=> {
+  const onAdd = (counter)=> {
     setQty(counter);
     alert("Se agregaron " + counter + " unidades al carrito de " + title);
+    addItem(item, counter);
   }
 
   const {title, img, price, info, stock} = item
