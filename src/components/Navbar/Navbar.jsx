@@ -9,7 +9,7 @@ function MyAppNavbar() {
   return (
     <Navbar id="navbar" collapseOnSelect expand="lg" bg="warning" variant="white">
       <Container>
-        <Link className='logo' to="/">
+        <Link className='logo' to="/" style={{textDecoration:'none'}}>
           <img className='logoImg' src={logo} alt="logo" />
           <Navbar.Brand className='logoText'>React + Bootstrap</Navbar.Brand>
         </Link>
@@ -19,12 +19,11 @@ function MyAppNavbar() {
             <Nav.Link href="#Login">Login</Nav.Link>
             <Nav.Link href="#AboutUs">Nosotros</Nav.Link>
             <NavDropdown title="Categorías" id="collasible-nav-dropdown">
-              <Link to="/category/Jordan"><NavDropdown.Item className='navbarCategory' href="#Jordan">Jordan</NavDropdown.Item></Link>
-              <Link to="/category/Nike"><NavDropdown.Item href="#Nike">Nike</NavDropdown.Item></Link>
-              {/* <NavDropdown.Item href="#Adidas">Adidas</NavDropdown.Item> */}
+              <NavDropdown.Item><Link to="/category/Jordan" href="#Jordan" style={{color:'black', textDecoration:'none'}}>Jordan</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/category/Nike" href="#Nike" style={{color:'black', textDecoration:'none'}}>Nike</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/category/Nike" href="#Adidas" style={{color:'black', textDecoration:'none'}}>Adidas</Link></NavDropdown.Item>
               <NavDropdown.Divider/>
-              <Link to="/"><NavDropdown.Item href="#TodosLosProductos">Todos los productos</NavDropdown.Item></Link>
-              
+              <NavDropdown.Item><Link to="/" href="#TodosLosProductos" style={{color:'black', textDecoration:'none'}}>Todos los productos</Link></NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>

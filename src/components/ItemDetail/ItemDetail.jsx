@@ -7,11 +7,12 @@ import Button from 'react-bootstrap/esm/Button';
 import { Link } from 'react-router-dom';
 
 function ItemDetail({item}) {
-  const [qty, setQty] = useState(0);
+  const [quantity, setQuantity] = useState(0);
   const {addItem} = useContext(CartContext);
 
   const onAdd = (counter)=> {
-    setQty(counter);
+    setQuantity(counter);
+    item.qty = counter;
     alert("Se agregaron " + counter + " unidades al carrito de " + title);
     addItem(item, counter);
   }
@@ -29,7 +30,7 @@ function ItemDetail({item}) {
             <div className='itemDetailCardText'>
                 <span>{info}</span>
                 <h3 className='itemDetailCardTextPrice'>Precio: U$D{price}</h3>
-                { qty===0 ?
+                { quantity===0 ?
                 <ItemCount stock={stock} initial={0} onAdd={onAdd} title={item.title}/> :
                 <Link to="/cart"><Button variant="warning">Finalizar compra</Button></Link> }
             </div>

@@ -1,4 +1,4 @@
-import React, {useState, createContext, children} from 'react'
+import React, {useState, createContext} from 'react'
 
 export const CartContext = createContext();
 
@@ -10,18 +10,20 @@ const CartProvider = ({children})=> {
             setItems([...items, { ...item, qty }])
         } else {
             let aux = items;
-            let itemIndex = aux.findIndex((e) => e.id == item.id);      
+            let itemIndex = aux.findIndex((e) => e.id === item.id);      
             aux[itemIndex].qty += qty;
             if(aux[itemIndex].qty > aux[itemIndex].stock) {
                 alert("No hay más stock disponible")
+                aux[itemIndex].qty = aux[itemIndex].qty - qty;
+                setItems([...aux]);
             } else {
-                setItems([...aux])
+                setItems([...aux]);
             }
         }
     }
 
     function removeItem(itemId) {
-        setItems(items.filter((e)=> e.id != itemId))
+        setItems(items.filter((e)=> e.id !== itemId))
     }
 
     function clear() {
@@ -29,7 +31,7 @@ const CartProvider = ({children})=> {
     }
 
     function isInCart(itemId) {
-        return items.find((e)=> e.id == itemId)
+        return items.find((e)=> e.id === itemId)
     }
 
   return (
