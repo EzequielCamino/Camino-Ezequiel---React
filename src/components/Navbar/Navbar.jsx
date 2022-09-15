@@ -21,7 +21,7 @@ function MyAppNavbar() {
             <NavDropdown title="Categorías" id="collasible-nav-dropdown">
               <NavDropdown.Item><Link to="/category/Jordan" href="#Jordan" style={{color:'black', textDecoration:'none'}}>Jordan</Link></NavDropdown.Item>
               <NavDropdown.Item><Link to="/category/Nike" href="#Nike" style={{color:'black', textDecoration:'none'}}>Nike</Link></NavDropdown.Item>
-              <NavDropdown.Item><Link to="/category/Nike" href="#Adidas" style={{color:'black', textDecoration:'none'}}>Adidas</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/category/Adidas" href="#Adidas" style={{color:'black', textDecoration:'none'}}>Adidas</Link></NavDropdown.Item>
               <NavDropdown.Divider/>
               <NavDropdown.Item><Link to="/" href="#TodosLosProductos" style={{color:'black', textDecoration:'none'}}>Todos los productos</Link></NavDropdown.Item>
             </NavDropdown>

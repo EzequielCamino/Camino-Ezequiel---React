@@ -4,31 +4,35 @@ import {useParams} from 'react-router-dom';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import Loading from '../Loading/Loading';
 import "./ItemDetailContainer.scss"
+import db from '../../services';
+import { collection, getDocs } from 'firebase/firestore'
 
 function ItemDetailContainer() {
     const {id} = useParams();
     const [item, setItem] = useState({});
     const [loadComplete, setLoadComplete] = useState(false);
 
-    useEffect(()=> {
-    new Promise((resolve)=>{
-      setTimeout(() => {
-        fetch("../products.json")
-        .then(response => response.json())
-        .then(data => {
-          let products = data.products
-          console.log("Promesa completa");
-            resolve(products.find((el)=> el.id == id))
-          })
-        }, 3000);
-      })
-      .then(data => {
-        setItem(data);
-        console.log("promesa resuelta");
-        console.log(data);
-        setLoadComplete(true);
-    });
-  }, [id])
+  useEffect(()=> {
+
+    const getProducts = async() =>{
+      try {
+      const itemsCollection =  collection(db, "products");
+      const col = await getDocs(itemsCollection);
+      const products = col.docs.map((doc)=> doc = { id:doc.id, ...doc.data()});
+      setItem(products.find((el)=> el.id === id))
+      setLoadComplete(true);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    
+    getProducts();
+
+    return()=> {
+
+    }
+
+  }, [id]);
 
   return (
     <div className='item'>
