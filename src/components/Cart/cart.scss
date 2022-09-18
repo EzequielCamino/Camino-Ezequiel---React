@@ -5,11 +5,17 @@
     .cartTitle {
         margin-bottom: 5rem;
     }
+    .cartDiv{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    } 
     .cartContent {
         display: flex;
         flex-direction: column;
         gap: 2rem;
         align-items: center;
+        justify-items: center;
         .cartContentList {
             color: black;
             list-style: none;
@@ -25,5 +31,11 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .cartDiv {
+        flex-direction: column;
     }
 }
