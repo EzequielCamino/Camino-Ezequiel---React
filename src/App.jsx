@@ -6,6 +6,8 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import Cart from './components/Cart/Cart';
 import CartProvider from './context/CartContext';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-toastify/dist/ReactToastify.css'
+import AboutUs from './components/AboutUs/AboutUs';
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
         <MyAppNavbar/>
         <Routes>
           <Route path="/" element={<ItemListContainer greeting='Bienvenido a mi app de React'/>} />
-          <Route path="/category/:categoryid" element={<ItemListContainer greeting='Bienvenido a mi app de React'/>} />
+          <Route path='/aboutus' element={<AboutUs/>}/>
+          <Route path="/category/:categoryid" element={<ItemListContainer greeting='Bienvenido a GoldenLoot®'/>} />
           <Route path="/item/:id" element={<ItemDetailContainer/>} />
           <Route path='/cart' element={<Cart/>}/>
         </Routes>

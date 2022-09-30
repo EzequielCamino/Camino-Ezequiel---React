@@ -21,6 +21,11 @@
                 font-size: 1.2rem;
             }
         }
+        .itemDetailCardTextButtons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+        }
     }    
 }
 

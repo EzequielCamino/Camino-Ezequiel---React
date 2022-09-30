@@ -11,30 +11,6 @@ function ItemListContainer(props) {
   const {categoryid} = useParams();
   const [loadComplete, setLoadComplete] = useState(false);
 
-/*   useEffect(()=>{
-      new Promise((resolve)=>{
-        let productsFiltered = [];
-        setTimeout(() => {
-          fetch("products.json")
-          .then(response => response.json())
-          .then(data => {
-            let products = data.products
-            console.log("Promesa completa");
-            productsFiltered =  categoryid ?
-            products.filter((e)=> e.category === categoryid)
-            : products;
-            resolve(productsFiltered);
-          })
-        }, 3000);
-      })
-      .then((data)=>{
-        setItems(data);
-        console.log("promesa resuelta");
-        console.log(data);
-        setLoadComplete(true);
-      });
-  }, [categoryid]) */
-
   useEffect(()=> {
 
     const getProducts = async() =>{

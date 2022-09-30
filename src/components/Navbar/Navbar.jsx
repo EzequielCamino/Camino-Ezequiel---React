@@ -11,19 +11,20 @@ function MyAppNavbar() {
       <Container>
         <Link className='logo' to="/" style={{textDecoration:'none'}}>
           <img className='logoImg' src={logo} alt="logo" />
-          <Navbar.Brand className='logoText'>React + Bootstrap</Navbar.Brand>
+          <Navbar.Brand className='logoText'>GoldenLoot</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#Login">Login</Nav.Link>
-            <Nav.Link href="#AboutUs">Nosotros</Nav.Link>
+            <Link to="/AboutUs" className='navbarLink' style={{marginTop:'0.5rem'}}>Sobre nosotros</Link>
             <NavDropdown title="Categorías" id="collasible-nav-dropdown">
-              <NavDropdown.Item><Link to="/category/Jordan" href="#Jordan" style={{color:'black', textDecoration:'none'}}>Jordan</Link></NavDropdown.Item>
-              <NavDropdown.Item><Link to="/category/Nike" href="#Nike" style={{color:'black', textDecoration:'none'}}>Nike</Link></NavDropdown.Item>
-              <NavDropdown.Item><Link to="/category/Adidas" href="#Adidas" style={{color:'black', textDecoration:'none'}}>Adidas</Link></NavDropdown.Item>
+              <Link to="/category/Jordan" href="#Jordan" className='navbarLink'>Jordan</Link>
+              <Link to="/category/Nike" href="#Nike" className='navbarLink'>Nike</Link>
+              <Link to="/category/Adidas" href="#Adidas" className='navbarLink' style={{marginRight:'1rem'}}>Adidas</Link>
               <NavDropdown.Divider/>
-              <NavDropdown.Item><Link to="/" href="#TodosLosProductos" style={{color:'black', textDecoration:'none'}}>Todos los productos</Link></NavDropdown.Item>
+              <Link to="/category/Indumentaria" href="#Indumentaria" className='navbarLink'>Indumentaria</Link>
+              <NavDropdown.Divider/><NavDropdown.Divider/>
+              <Link to="/" href="#TodosLosProductos" className='navbarLink'>Todos los productos</Link>
             </NavDropdown>
           </Nav>
           <Nav>
