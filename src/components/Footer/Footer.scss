@@ -2,12 +2,11 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: #ffc107;
-    margin-top: 8%;
+    margin-top: 10%;
     .footer {
         margin-top: 4vw;
         display: flex;
         justify-content: space-around;
-        font-size: 1vw;
         .footer_data {
             display: flex;
             flex-direction: column;
@@ -30,6 +29,5 @@ footer {
     }
     .copyright {
         margin-top: 2vw;
-        font-size: 1vw;
     }
 }
