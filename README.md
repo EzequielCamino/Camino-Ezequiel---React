@@ -19,7 +19,7 @@ Utilizado para los íconos del footer
 
 #### Se uso Firebase para la base de datos
 
-### Para ver el deploy del sitio: [Golden Loot](https://goldenloot-l0utjlkz4-ezequielcamino.vercel.app/)
+### Para ver el deploy del sitio: [Golden Loot](https://goldenloot.vercel.app/)
 
 
 ## GIF explicativo del proceso de compra:
