@@ -1,0 +1,45 @@
+.cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .cartTitle {
+        margin-bottom: 5rem;
+    }
+    .cartDiv{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    } 
+    .cartContent {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-items: center;
+        .cartContentList {
+            color: black;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            .cartContentListLink {
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    transition: 0.2s;
+                    color: rgb(255, 193, 7);
+                }
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .cartDiv {
+        flex-direction: column;
+    }
+}

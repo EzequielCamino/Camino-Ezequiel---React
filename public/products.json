@@ -1,0 +1,58 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "category": "Nike",
+            "title": "Dunk SB Low Red Plum",
+            "img": "https://i.imgur.com/d2R2MWX.jpg",
+            "price": 150,
+            "info": "Este modelo LOW PRO 'ACG Terra Red Plum', con su combinación de colores llamativos inspirados en el outdoorism y el upper de piel y gamuza suave, saben cómo hacerte destacar en la tabla. La unidad Zoom Air en el talón y la lengüeta acolchada te aportan todo el confort que necesitás. La suela de goma con patrón circular es flexible y resistente, y te asegura además un agarre multidireccional, ideal para practicar tus tricks más atrevidos.",
+            "stock": 2
+        },
+        {
+            "id": 2,
+            "category": "Jordan",
+            "title": "Jordan 1 Mid Racer Blue",
+            "img": "https://i.imgur.com/wozzbgq.jpg",
+            "price": 200,
+            "info": "Originalmente hechos para que Michael Jordan jugara básquetbol en la NBA, los AJ1 se convirtieron en parte de la moda urbana. Su construcción de cuero le brinda una mayor durabilidad y resistencia. Los orificios frontales los hacen frescos y el cuello alto protegerá tus tobillos en todo momento. Podrás ajustarlos sencillamente en tus pies gracias a sus agujetas y lengüeta. La suela está hecha de goma, tiene un patrón grabado en el exterior y la Unidad Air Sole. Esto en conjunto te brinda pisadas suaves y una gran tracción en la superficie.",
+            "stock": 1
+        },
+        {
+            "id": 3,
+            "category": "Nike",
+            "title": "Dunk SB Low Navy Gum",
+            "img": "https://i.imgur.com/P4zyWq6.jpg",
+            "price": 220,
+            "info": "Como parte de la serie Orange Label exclusiva de Nike SB, las Dunk Low Pro ISO están listas para salir a las calles en una iteración de azul marino, negro y caramelo. La capellada construida en gamuza azul marino resistente se asienta sobre el midsole blanco y una suela color goma contrastante. Un Swoosh de cuero negro completa el look simple pero efectivo.",
+            "stock": 0
+        },
+        {
+            "id": 4,
+            "category": "Adidas",
+            "title": "Adidas Forum 84 High",
+            "img": "https://i.imgur.com/OnjoP7S.jpg",
+            "price": 210,
+            "info": "Llegó el momento de rendir homenaje a un ícono. Las zapatillas adidas Forum dominaron las canchas de básquet y las calles, y este 2021 están de vuelta para llevar tus pasos a otro nivel. La zapatilla Forum debutó por primera vez en 1984 en las canchas de basquetbol y poco a poco se adueño del mundo de la música, dándole estatus a los pies de los raperos en el mundo del Hip-Hop.",
+            "stock": 3
+        },
+        {
+            "id": 5,
+            "category": "Jordan",
+            "title": "Jordan 1 High Brotherhood",
+            "img": "https://i.imgur.com/MsbYRZx.jpg",
+            "price": 250,
+            "info": "El exclusivo Air Jordan 1 High OG 'Brotherhood' rinde homenaje a Omega Psi Phi, la fraternidad a la que Michael Jordan se unió durante su mandato en la Universidad de Carolina del Norte. Con el apodo apropiado, los tonos característicos de la fraternidad de University Gold toman protagonismo. Los colores Light Bordeaux y White visten una base de cuero blanco y lengüetas de nailon. Mientras que el dorado y el púrpura son prominentes para las superposiciones y las áreas de la marca. Por último, una entresuela blanca y una suela de goma amarilla rematan el diseño.",
+            "stock": 1
+        },
+        {
+            "id": 6,
+            "category": "Jordan",
+            "title": "Jordan 1 Low Dark Teal",
+            "img": "https://i.imgur.com/6Dv6QoD.jpg",
+            "price": 200,
+            "info": "Inspiradas en el básquet de los 80, la nueva apuesta de la marca te presenta las Zapatillas Jordan Air 1 Low. Están confeccionadas en cuero sintético para una mayor durabilidad y un look sofisticado. Nacidas en 1985, su estilo reconocido mundialmente introduce mejoras en la unidad Air-Sole encapsulada para proporcionar una amortiguación ligera y en la suela de goma que brinda mayor agarre, tracción y reacción en cada salto.",
+            "stock": 4
+        }
+    ]
+}

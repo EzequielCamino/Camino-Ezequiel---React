@@ -9,22 +9,22 @@ function MyAppNavbar() {
   return (
     <Navbar id="navbar" collapseOnSelect expand="lg" bg="warning" variant="white">
       <Container>
-        <Link className='logo' to="/">
+        <Link className='logo' to="/" style={{textDecoration:'none'}}>
           <img className='logoImg' src={logo} alt="logo" />
-          <Navbar.Brand className='logoText'>React + Bootstrap</Navbar.Brand>
+          <Navbar.Brand className='logoText'>GoldenLoot</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#Login">Login</Nav.Link>
-            <Nav.Link href="#AboutUs">Nosotros</Nav.Link>
+            <Link to="/AboutUs" className='navbarLink' style={{marginTop:'0.5rem'}}>Sobre nosotros</Link>
             <NavDropdown title="Categorías" id="collasible-nav-dropdown">
-              <Link to="/category/Jordan"><NavDropdown.Item className='navbarCategory' href="#Jordan">Jordan</NavDropdown.Item></Link>
-              <Link to="/category/Nike"><NavDropdown.Item href="#Nike">Nike</NavDropdown.Item></Link>
-              {/* <NavDropdown.Item href="#Adidas">Adidas</NavDropdown.Item> */}
+              <Link to="/category/Jordan" href="#Jordan" className='navbarLink'>Jordan</Link>
+              <Link to="/category/Nike" href="#Nike" className='navbarLink'>Nike</Link>
+              <Link to="/category/Adidas" href="#Adidas" className='navbarLink' style={{marginRight:'1rem'}}>Adidas</Link>
               <NavDropdown.Divider/>
-              <Link to="/"><NavDropdown.Item href="#TodosLosProductos">Todos los productos</NavDropdown.Item></Link>
-              
+              <Link to="/category/Indumentaria" href="#Indumentaria" className='navbarLink'>Indumentaria</Link>
+              <NavDropdown.Divider/><NavDropdown.Divider/>
+              <Link to="/" href="#TodosLosProductos" className='navbarLink'>Todos los productos</Link>
             </NavDropdown>
           </Nav>
           <Nav>

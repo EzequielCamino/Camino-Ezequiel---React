@@ -12,7 +12,7 @@ function Item({id, img, title, price}) {
           Precio: U$D{price}
           </Card.Text>
           <Link to={`/item/${id}`}>
-            <Button variant="primary"> Ver detalle </Button>
+            <Button variant="warning"> Ver detalle </Button>
           </Link>
       </Card.Body>
     </Card>
