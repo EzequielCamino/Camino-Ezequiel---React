@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MyAppNavbar from './components/Navbar/Navbar';
+import MyAppFooter from './components/Footer/Footer';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
@@ -16,12 +17,13 @@ function App() {
       <BrowserRouter>
         <MyAppNavbar/>
         <Routes>
-          <Route path="/" element={<ItemListContainer greeting='Bienvenido a mi app de React'/>} />
+          <Route path="/" element={<ItemListContainer greeting='Bienvenido a GoldenLoot®'/>} />
           <Route path='/aboutus' element={<AboutUs/>}/>
           <Route path="/category/:categoryid" element={<ItemListContainer greeting='Bienvenido a GoldenLoot®'/>} />
           <Route path="/item/:id" element={<ItemDetailContainer/>} />
           <Route path='/cart' element={<Cart/>}/>
         </Routes>
+        <MyAppFooter/>
       </BrowserRouter>
     </CartProvider>
     </>
