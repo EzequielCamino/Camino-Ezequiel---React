@@ -3,13 +3,18 @@ import { CartContext } from '../../context/CartContext';
 import db from '../../services';
 import { collection, addDoc, updateDoc, doc, getDoc } from 'firebase/firestore';
 import { Button, Form } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
     const validateForm = (campos) => {
     return campos.some((campo) => campo === "")}
 
+    
     const Formulario = ({ total, compra }) => {
+        
+    const navigate = useNavigate();
     const { clear, items } = useContext(CartContext)
+    
     const fetchGenerateTicket =  async ({data}) => {
         function updateStock() {
             const updateItemStock = async(id, qty) => {
@@ -36,6 +41,8 @@ import Swal from 'sweetalert2';
                 '¡Pedido generado correctamente!',
                 `Su ID de pedido es: ${order.id}`,
                 'success'
+            ).then(
+                navigate("/")
             )
         } catch (error) {
             console.log(error);
