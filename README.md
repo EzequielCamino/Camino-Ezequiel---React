@@ -1,73 +1,39 @@
-Se utilizó el módulo Bootstrap para dar estilo a Navbar y las cards Item e ItemDetail
-Se utilizó el módulo SASS para dar estilo a todas las hojas de estilo.
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React JS - Comisión 38280
 
-## Available Scripts
+## Proyecto Final - Golden Loot (E-commerce) - Camino Ezequiel
 
-In the project directory, you can run:
+El proyecto fue desarrollado íntegramente utilizando React, RouterDom, Sass y las siguientes librerías:
+#### Bootstrap
+Utilizado para dar estilo general al proyecto
 
-### `npm start`
+#### Sweet Alert
+Utilizado para las notificaciones en formato Modal (success o error) al avanzar en el proceso de compra
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Toastify
+Utilizado para las notificaciones en formato Toast (success o error) al intentar agregar unidades de un producto al carrito
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Font Awesome
+Utilizado para los íconos del footer
 
-### `npm test`
+#### Se uso Firebase para la base de datos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Para ver el deploy del sitio: [Golden Loot](https://goldenloot-l0utjlkz4-ezequielcamino.vercel.app/)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## GIF explicativo del proceso de compra:
+![buy](https://user-images.githubusercontent.com/103323332/193184153-de510673-e56f-4f03-a55c-874bfa93cb74.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### Al intentar agregar stock de un producto, éste se verifica (el primer ítem se encuentra sin stock a fines prácticos)
+##### Los productos se encuentran dividos por categorías accesibles desde el Navbar
+##### Finalizar la compra genera una "order" que se guarda en Firebase y se le da el ID de ésta al usuario
+##### El stock comprado es removido de la base de datos de Firebase y, consecuentemente, del sitio web
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## GIF explicativo del proceso de restaurar carrito:
+![restoreCart](https://user-images.githubusercontent.com/103323332/193184160-c38a4f3e-b910-4edf-a348-1731e472e1f2.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##### Al recargar el sitio o salir del navegador, el carrito creado es guardado en LocalStorage
+##### Éste puede restaurarse únicamente desde un carrito vacío
+##### Si el carrito fue limpiado o el proceso de compra se completó no es posible retaurarlo
